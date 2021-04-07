@@ -1,0 +1,40 @@
+{ "name": "anned21",
+  "version": "0.0.1",
+  "description": "Example project for learning Vue.js",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/anned21-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/anned21-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/anned21-js/issues"
+  },
+  "contributors": [],
+
+  "private": true, "license": "ISC",
+
+  "scripts": {
+    "lint": "elp",
+    "test": "elp && nodemjs test/all.mjs"
+  },
+  "directories": { "test": "test" },
+  "eslintConfig": { "extends": "nodejs-pmb" },
+
+  "dependencies": {
+    "cash-dom": "^8.1.0",
+    "eslint-pretty-pmb": "^1.0.2",
+    "json5": "^2.2.0",
+    "vue": "^2.6.12"
+  },
+  "browser": {},
+  "devDependencies": {
+    "eslint-config-nodejs-pmb": "^0.0.6",
+    "nodemjs": "^0.1.8"
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
