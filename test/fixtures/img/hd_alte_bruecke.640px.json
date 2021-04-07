@@ -1,0 +1,10 @@
+﻿{ "@context": "http://www.w3.org/ns/anno.jsonld",
+  "type": "Annotation",
+  "id": "urn:uuid:080087be-a1b2-4146-b068-ce94f996c2ad",
+  "target": {
+    "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2013.10.01.111339_Alte_Br%C3%BCcke_Heiliggeistkirche_View_City_Heidelberg.jpg/640px-2013.10.01.111339_Alte_Br%C3%BCcke_Heiliggeistkirche_View_City_Heidelberg.jpg",
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "body": "https://en.wikipedia.org/wiki/File:2013.10.01.111339_Alte_Br%C3%BCcke_Heiliggeistkirche_View_City_Heidelberg.jpg",
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/"
+}
