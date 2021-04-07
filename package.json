@@ -27,6 +27,7 @@
     "cash-dom": "^8.1.0",
     "eslint-pretty-pmb": "^1.0.2",
     "json5": "^2.2.0",
+    "systemjs": "^6.8.3",
     "vue": "^2.6.12"
   },
   "browser": {},

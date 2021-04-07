@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>AnnEd21</title>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+</head><body>
+<div class="anned21-standalone">
+  <script type="systemjs-importmap">{"imports":{
+    "cash-dom": "node_modules/cash-dom/dist/cash.js",
+    "json5": "node_modules/json5/dist/index.min.js",
+    "vue": "node_modules/vue/dist/vue.js",
+    "zzz-dummy": "JSON git compat: no comma here -->"
+  }}</script>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script src="node_modules/systemjs/dist/extras/amd.js"></script>
+  <script src="node_modules/systemjs/dist/extras/named-exports.js"></script>
+  <script>window.System.import('./src/standalone.load_inplace.mjs');</script>
+</div>
+</body></html>
