@@ -1,0 +1,5 @@
+{"imports":{
+"cash-dom": "./cash-dom.mjs",
+"json5": "./json5.mjs",
+"vue": "./vue.mjs",
+",": false}}
