@@ -1,10 +1,23 @@
 ﻿// -*- coding: utf-8, tab-width: 2 -*-
 
 import cash from 'cash-dom';
-import JSON5 from 'json5';
+import Vue from 'vue';
 
-Array.from(cash('.anned21-standalone')).forEach(function initOne(dest) {
-  const cfg = (JSON5.parse(cash(dest).find('script.config').html()) || {});
-  dest.config = cfg; // eslint-disable-line no-param-reassign
+import resolveConfig from './config.resolve.mjs';
+
+function deepCopyJson(x) { return JSON.parse(JSON.stringify(x)); }
+
+Array.from(cash('.anned21-standalone')).forEach(async function initOne(dest) {
+  const cfgPr = resolveConfig(cash(dest).find('script.config').html());
   cash(dest).find('script').remove();
+  const cfg = await cfgPr;
+  const vueInst = new Vue({
+    el: dest,
+    data: deepCopyJson({
+      // deepCopy b/c vue will modify stuff in-place
+      config: cfg,
+    }),
+  });
+  Object.assign(dest, { cfg, vueInst });
+  console.info('Initialized anned:', dest, cfg);
 });

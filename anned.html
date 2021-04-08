@@ -8,12 +8,11 @@
   <meta http-equiv="Content-Style-Type" content="text/css">
 </head><body>
 <div class="anned21-standalone">
-  <script type="systemjs-importmap">{"imports":{
-    "cash-dom": "node_modules/cash-dom/dist/cash.js",
-    "json5": "node_modules/json5/dist/index.min.js",
-    "vue": "node_modules/vue/dist/vue.js",
-    "zzz-dummy": "JSON git compat: no comma here -->"
-  }}</script>
+  <p><img :src="config.knownTargets[0].id"></p>
+  <p><a :href="config.knownTargets[0].rights">License Info</a></p>
+  <script class="config" type="text/x-json5">{
+    "@extends": "../test/fixtures/example-config.mjs",
+  }</script>
   <script src="node_modules/cash-dom/dist/cash.js"      wg="cash"   ></script>
   <script src="node_modules/json5/dist/index.min.js"    wg="JSON5"  ></script>
   <script src="node_modules/vue/dist/vue.js"            wg="Vue"    ></script>
@@ -25,6 +24,7 @@
   <script src="node_modules/systemjs/dist/system.js"></script>
   <script src="node_modules/systemjs/dist/extras/amd.js"></script>
   <script src="node_modules/systemjs/dist/extras/named-exports.js"></script>
-  <script>window.System.import('./src/standalone.load_inplace.mjs');</script>
+  <script src="node_modules/systemjs-babel/dist/systemjs-babel.js"></script>
+  <script type="systemjs-module" src="./src/standalone.load_inplace.mjs"></script>
 </div>
 </body></html>
